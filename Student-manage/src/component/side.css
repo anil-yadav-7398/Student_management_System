@@ -1,0 +1,25 @@
+.nav-link {
+    color: #333333;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    /* Smooth effect ke liye */
+}
+
+/* 1. Hover Effect: Mouse upar le jaane par rang badlega */
+.nav-link:hover {
+    color: #007bff;
+    border-radius: 5px;
+
+    /* Blue color */
+    background-color: yellow;
+}
+
+/* 2. Active Style: Current page ka link hamesha alag dikhega */
+.nav-link.active {
+    color: #ffffff;
+    background-color: #00ffae;
+    border-radius: 5px;
+}
+
