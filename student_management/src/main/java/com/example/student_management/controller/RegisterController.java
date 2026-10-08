@@ -22,7 +22,6 @@ import java.util.Optional;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
 @RestController
 @RequestMapping("/api")
 @CrossOrigin(origins = "http://localhost:5173/")
@@ -76,11 +75,12 @@ public class RegisterController {
         return userRepository.save(student);
     }
 
-    @GetMapping("/email/{email}")
-    Optional <Register> getMethodName(@PathVariable String email) {
+    @GetMapping("/email")
+    Optional<Register> getMethodName(@PathVariable String email) {
+
         return userRepository.findByEmail(email);
     }
-    
+
     // LOGIN
     @PostMapping("/login")
     public ResponseEntity<?> login(
