@@ -36,9 +36,6 @@ const Sidebaar = ({ children }) => {
 
                             <li className="nav-item">
                                 <NavLink className="nav-link text-white" to={"/allstudent"}> View All Student</NavLink></li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link text-white" to={"/registerGet"}> View All Register</NavLink></li>
-
 
                             <li className="nav-item">
                                 <button className="nav-link text-white" onClick={logout}> LOG-OUT</button></li>

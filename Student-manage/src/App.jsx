@@ -14,7 +14,7 @@ import EditAttendence from './page/EditAttendence'
 import Login from './loginRegister/Login'
 import Register from "./loginRegister/Register"
 import Sidebaar from './component/Sidebaar'
-import GetRegister from './page/Register1'
+
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
         <Route path="/editfees/:id" element={<Editfee />} />
         <Route path="/attendence" element={<Attendence />} />
         <Route path="/user" element={<Sidebaar />} />
-        <Route path="/registerGet" element={<GetRegister />} />
+
 
       </Routes>
     </>
